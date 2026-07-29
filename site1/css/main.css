@@ -1,0 +1,386 @@
+:root {
+    --primary: #7f56d9;
+    --primary-link: #2e90fa;
+    --heading: #1d2939;
+    --text: #475467;
+    --muted: #667085;
+    --label: #344054;
+    --border: #d0d5dd;
+    --focus-border: #84caff;
+    --focus-ring: rgba(127, 86, 217, 0.2);
+    --white: #fff;
+    --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#wrap {
+    min-height: 100%;
+}
+
+body {
+    min-width: 320px;
+    background: var(--white);
+    color: var(--heading);
+    font-family: Inter, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+#wrap {
+    display: flex;
+    min-height: 100vh;
+}
+
+.visual-panel {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 34.1146%;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(49, 49, 49, 0.3) 4.74%, rgba(0, 0, 0, 0.55) 100%),
+        url("../images/login-background.jpg") center / cover no-repeat;
+}
+
+.menu-button {
+    position: absolute;
+    top: 7.03%;
+    left: 14.35%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0;
+    color: var(--white);
+    background: transparent;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.menu-icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon img {
+    width: 35px;
+    height: 24.5833px;
+}
+
+.brand {
+    position: absolute;
+    top: 46.09%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    color: var(--white);
+    transform: translateX(-50%);
+}
+
+.brand img {
+    width: 42px;
+    height: 41px;
+}
+
+.brand span {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0.38px;
+    white-space: nowrap;
+}
+
+.social-list {
+    position: absolute;
+    bottom: 5.37%;
+    left: 50%;
+    display: flex;
+    gap: 12px;
+    transform: translateX(-50%);
+}
+
+.social-list a {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: var(--white);
+}
+
+.social-list img {
+    width: 20.4px;
+    height: 20.4px;
+}
+
+.content-panel {
+    display: flex;
+    width: 65.8854%;
+    min-height: 100vh;
+    margin-left: 34.1146%;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.signup-form {
+    display: flex;
+    width: 448px;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.form-heading {
+    margin-bottom: 38px;
+}
+
+.form-heading h1 {
+    margin-bottom: 10px;
+    color: var(--heading);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.form-heading p {
+    color: var(--muted);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--label);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.input-wrap {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+    padding: 9px 13px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: var(--shadow-xs);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-wrap:focus-within {
+    border-color: var(--focus-border);
+    box-shadow: 0 0 0 4px var(--focus-ring), var(--shadow-xs);
+}
+
+.input-wrap img {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+}
+
+.input-wrap input {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: #101828;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 38px;
+}
+
+.next-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 28px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    color: var(--white);
+    background: var(--primary);
+    box-shadow: var(--shadow-xs);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.next-button:hover {
+    border-color: #6941c6;
+    background: #6941c6;
+}
+
+.next-button:active {
+    transform: translateY(1px);
+}
+
+.next-button:focus-visible,
+.menu-button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #84caff;
+    outline-offset: 3px;
+}
+
+.next-icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-icon img {
+    width: 7.0364px;
+    height: 12.0364px;
+}
+
+.login-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 34px;
+    border-top: 1px solid var(--border);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.login-row span {
+    color: var(--text);
+}
+
+.login-row a {
+    color: var(--primary-link);
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    #wrap {
+        display: block;
+    }
+
+    .visual-panel {
+        position: relative;
+        width: 100%;
+        min-height: 320px;
+    }
+
+    .menu-button {
+        top: 24px;
+        left: 24px;
+    }
+
+    .brand {
+        top: 46%;
+    }
+
+    .social-list {
+        bottom: 24px;
+    }
+
+    .content-panel {
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+        padding: 72px 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .visual-panel {
+        min-height: 260px;
+    }
+
+    .menu-button {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .menu-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .menu-icon img {
+        width: 27px;
+        height: 19px;
+    }
+
+    .brand {
+        gap: 12px;
+    }
+
+    .brand img {
+        width: 34px;
+        height: 33px;
+    }
+
+    .brand span {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .content-panel {
+        padding: 48px 20px;
+    }
+
+    .form-heading h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .login-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

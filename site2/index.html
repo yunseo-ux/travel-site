@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LIVE EVIL</title>
+        <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <p id="skipNav"><a href="#content">본문 바로가기</a></p>
+
+        <div id="wrap">
+            <header id="header">
+                <div class="inner">
+                    <h1 class="header__logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" alt="LIVE EVIL" />
+                        </a>
+                    </h1>
+                    <nav class="nav" aria-label="주요 메뉴">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#">진행중</a></li>
+                            <li class="nav__item"><a href="#">베스트</a></li>
+                            <li class="nav__item"><a href="#">브랜드</a></li>
+                            <li class="nav__item"><a href="#">캘린더</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="header__utils">
+                        <li>
+                            <button class="header__icon-button" type="button" aria-label="검색">
+                                <img src="images/icon-search.svg" alt="" />
+                            </button>
+                        </li>
+                        <li>
+                            <button class="header__icon-button" type="button" aria-label="장바구니">
+                                <img src="images/icon-cart.svg" alt="" />
+                            </button>
+                        </li>
+                        <li>
+                            <button class="header__icon-button" type="button" aria-label="마이페이지">
+                                <img src="images/icon-profile.svg" alt="" />
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <section id="hero" class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero__slide hero__slide--1">
+                        <img class="hero__visual" src="images/visual1.jpg" alt="바이럼 세럼을 들고 있는 모델" />
+                    </div>
+                    <div class="swiper-slide hero__slide hero__slide--2">
+                        <img class="hero__visual" src="images/visual2.jpg" alt="세럼 병을 얼굴 가까이 든 모델" />
+                    </div>
+                    <div class="swiper-slide hero__slide hero__slide--3">
+                        <img class="hero__visual" src="images/visual3.jpg" alt="세럼 병을 손에 든 모델" />
+                    </div>
+                    <div class="swiper-slide hero__slide hero__slide--4">
+                        <img class="hero__visual" src="images/visual4.jpg" alt="세럼 병을 턱 아래에 든 모델" />
+                    </div>
+                </div>
+                <div class="hero__paging">
+                    <button class="hero__play" type="button" aria-label="슬라이드 자동 재생 일시정지">
+                        <img class="hero__play-icon" src="images/icon-play.svg" alt="" />
+                        <img class="hero__progress" src="images/hero-progress.svg" alt="" />
+                        <img class="hero__paused" src="images/icon-play-stopped.svg" alt="" />
+                    </button>
+                    <div class="hero__dots swiper-pagination" aria-label="히어로 슬라이드 선택"></div>
+                </div>
+            </section>
+            <main class="main" id="content">
+                <div class="con con1">
+                    <div class="inner">
+                        <div class="con1__slider swiper promotion-swiper">
+                        <ul class="promotion-list swiper-wrapper">
+                            <li class="promotion-card swiper-slide">
+                                <p class="promotion-card__display-title">HOLYDAY<br />30% OFF</p>
+                                <img class="promotion-card__photo" src="images/con1-holiday.jpg" alt="펜스 앞에서 포즈를 취한 모델" />
+                                <ul class="promotion-card__stats" aria-label="콘텐츠 반응">
+                                    <li><img src="images/icon-card-play.svg" alt="재생" />10만</li>
+                                    <li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li>
+                                </ul>
+                                <div class="promotion-card__actions">
+                                    <button type="button" aria-label="장바구니에 담기"><img src="images/icon-card-cart.svg" alt="" /></button>
+                                    <button type="button" aria-label="쇼핑백에 담기"><img src="images/icon-card-bag.svg" alt="" /></button>
+                                </div>
+                                <div class="promotion-card__info">
+                                    <h2>연휴를 위한 준비 단 7일간 최대<br />30% 세일</h2>
+                                    <p class="promotion-card__tags">#아다디스　#나이크　#마르지올라　#디옴</p>
+                                </div>
+                            </li>
+                            <li class="promotion-card swiper-slide">
+                                <p class="promotion-card__display-title">SPORTS<br />LOOKS</p>
+                                <img class="promotion-card__photo" src="images/con1-sports.jpg" alt="도로 위에서 포즈를 취한 스포츠웨어 모델" />
+                                <ul class="promotion-card__stats" aria-label="콘텐츠 반응">
+                                    <li><img src="images/icon-card-play.svg" alt="재생" />10만</li>
+                                    <li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li>
+                                </ul>
+                                <div class="promotion-card__actions">
+                                    <button type="button" aria-label="장바구니에 담기"><img src="images/icon-card-cart.svg" alt="" /></button>
+                                    <button type="button" aria-label="쇼핑백에 담기"><img src="images/icon-card-bag.svg" alt="" /></button>
+                                </div>
+                                <div class="promotion-card__info">
+                                    <h2>애슬레틱 룩의 완성 운동할 때도<br />느낌있게</h2>
+                                    <p class="promotion-card__tags">#아다디스　#나이크　#마르지올라　#디옴</p>
+                                </div>
+                            </li>
+                            <li class="promotion-card swiper-slide">
+                                <p class="promotion-card__display-title">LUXURY<br />MOMENT</p>
+                                <img class="promotion-card__photo" src="images/con1-luxury.jpg" alt="선글라스를 쓰고 와인잔을 든 모델" />
+                                <ul class="promotion-card__stats" aria-label="콘텐츠 반응">
+                                    <li><img src="images/icon-card-play.svg" alt="재생" />10만</li>
+                                    <li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li>
+                                </ul>
+                                <div class="promotion-card__actions">
+                                    <button type="button" aria-label="장바구니에 담기"><img src="images/icon-card-cart.svg" alt="" /></button>
+                                    <button type="button" aria-label="쇼핑백에 담기"><img src="images/icon-card-bag.svg" alt="" /></button>
+                                </div>
+                                <div class="promotion-card__info">
+                                    <h2>첫 명품, 이렇게 구매하자<br />평생 쓰는 아이템 고르는 법</h2>
+                                    <p class="promotion-card__tags">#아다디스　#나이크　#마르지올라　#디옴</p>
+                                </div>
+                            </li>
+                            <li class="promotion-card swiper-slide">
+                                <p class="promotion-card__display-title">ROMANTIC<br />JEWALY</p>
+                                <img class="promotion-card__photo" src="images/con1-jewelry.jpg" alt="바닷가에서 포즈를 취한 주얼리 모델" />
+                                <ul class="promotion-card__stats" aria-label="콘텐츠 반응">
+                                    <li><img src="images/icon-card-play.svg" alt="재생" />10만</li>
+                                    <li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li>
+                                </ul>
+                                <div class="promotion-card__actions">
+                                    <button type="button" aria-label="장바구니에 담기"><img src="images/icon-card-cart.svg" alt="" /></button>
+                                    <button type="button" aria-label="쇼핑백에 담기"><img src="images/icon-card-bag.svg" alt="" /></button>
+                                </div>
+                                <div class="promotion-card__info">
+                                    <h2>기분 전환을 위한<br />주얼리 특집</h2>
+                                    <p class="promotion-card__tags">#아다디스　#나이크　#마르지올라　#디옴</p>
+                                </div>
+                            </li>
+                            <li class="promotion-card swiper-slide">
+                                <p class="promotion-card__display-title">HOLYDAY<br />30% OFF</p>
+                                <img class="promotion-card__photo" src="images/con1-holiday.jpg" alt="펜스 앞에서 포즈를 취한 모델" />
+                                <ul class="promotion-card__stats" aria-label="콘텐츠 반응">
+                                    <li><img src="images/icon-card-play.svg" alt="재생" />10만</li>
+                                    <li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li>
+                                </ul>
+                                <div class="promotion-card__actions">
+                                    <button type="button" aria-label="장바구니에 담기"><img src="images/icon-card-cart.svg" alt="" /></button>
+                                    <button type="button" aria-label="쇼핑백에 담기"><img src="images/icon-card-bag.svg" alt="" /></button>
+                                </div>
+                                <div class="promotion-card__info">
+                                    <h2>연휴를 위한 준비 단 7일간 최대<br />30% 세일</h2>
+                                    <p class="promotion-card__tags">#아다디스　#나이크　#마르지올라　#디옴</p>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                        <button class="con1__arrow con1__arrow--prev" type="button" aria-label="이전 프로모션"><img src="images/button-prev.svg" alt="" /></button>
+                        <button class="con1__arrow con1__arrow--next" type="button" aria-label="다음 프로모션"><img src="images/button-next.svg" alt="" /></button>
+                        <p class="con1__tag" aria-hidden="true">SALE</p>
+                        <button class="con1__more" type="button">더보기</button>
+                    </div>
+                </div>
+                <div class="con con2">
+                    <div class="inner">
+                        <div class="con2__heading">
+                            <h2>라이브 나우</h2>
+                            <p>할인 마감까지 남은 시간</p>
+                            <time datetime="PT1H20M12S">01 : 20 : 12</time>
+                        </div>
+                        <div class="con2__slider swiper live-swiper">
+                            <ul class="live-list swiper-wrapper">
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-sunglasses.jpg" alt="그레이시 그린 라운드 선글라스를 착용한 모델" />
+                                    <h3>그레이시 그린 라운드 선글라스</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-slacks.jpg" alt="오렌지 배경 앞 와이드 슬랙스 모델" />
+                                    <h3>하이퀄울터치 와이드슬랙스PT</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-sweatshirt.jpg" alt="빈티지 기모 맨투맨을 입은 모델" />
+                                    <h3>빈티지로지 기모맨투맨 10종</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-green-sunglasses.jpg" alt="야외에서 선글라스를 착용한 모델" />
+                                    <h3>그레이시 그린 라운드 선글라스</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-setup.jpg" alt="창가에서 포즈를 취한 셋업 모델" />
+                                    <h3>세미 A라인 셋업 스타일</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-dress.jpg" alt="초록색 배경 앞 로맨틱 원피스 모델" />
+                                    <h3>캐주얼 로맨틱 원피스</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-sunglasses.jpg" alt="그레이시 그린 라운드 선글라스를 착용한 모델" />
+                                    <h3>그레이시 그린 라운드 선글라스</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-sunglasses.jpg" alt="그레이시 그린 라운드 선글라스를 착용한 모델" />
+                                    <h3>그레이시 그린 라운드 선글라스</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-slacks.jpg" alt="오렌지 배경 앞 와이드 슬랙스 모델" />
+                                    <h3>하이퀄울터치 와이드슬랙스PT</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                                <li class="live-card swiper-slide">
+                                    <img class="live-card__photo" src="images/con2-sweatshirt.jpg" alt="빈티지 기모 맨투맨을 입은 모델" />
+                                    <h3>빈티지로지 기모맨투맨 10종</h3>
+                                    <p class="live-card__original"><del>130,000</del></p>
+                                    <p class="live-card__price"><strong>20%</strong> 30,000 원</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="con2__arrow con2__arrow--prev" type="button" aria-label="이전 라이브 상품"><img src="images/con2-prev.svg" alt="" /></button>
+                        <button class="con2__arrow con2__arrow--next" type="button" aria-label="다음 라이브 상품"><img src="images/con2-next.svg" alt="" /></button>
+                        <p class="con2__tag" aria-hidden="true">LIVE NOW</p>
+                        <button class="con2__more" type="button">더보기</button>
+                    </div>
+                </div>
+                <div class="con con3">
+                    <div class="inner">
+                        <h2>라이브 랭킹</h2>
+                        <div class="con3__slider swiper ranking-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ranking-group">
+                            <ul class="ranking__list">
+                                <li class="ranking-card">
+                                    <img class="ranking-card__photo" src="images/con3-rank1.jpg" alt="레드 드레스를 입은 라이브 방송 모델" />
+                                    <div class="ranking-card__body">
+                                        <strong class="ranking-card__number">1</strong>
+                                        <h3>연휴 선물 특집 라이브<br />방송 홈파티 준비 끝</h3>
+                                        <img class="ranking-card__divider" src="images/con3-divider.svg" alt="" />
+                                        <p class="ranking-card__product">라이트데님터치 쿨데미지버킷햇</p>
+                                        <p class="ranking-card__price"><strong>20%</strong> 30,000원</p>
+                                        <ul class="ranking-card__stats" aria-label="콘텐츠 반응"><li><img src="images/icon-card-play.svg" alt="재생" />10만</li><li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li></ul>
+                                    </div>
+                                </li>
+                                <li class="ranking-card">
+                                    <img class="ranking-card__photo" src="images/con3-rank3.jpg" alt="빈티지 드레스를 입은 라이브 방송 모델" />
+                                    <div class="ranking-card__body">
+                                        <strong class="ranking-card__number">3</strong>
+                                        <h3>빈티지 특집 드레스 7set<br />파격 할인</h3>
+                                        <img class="ranking-card__divider" src="images/con3-divider.svg" alt="" />
+                                        <p class="ranking-card__product">라이트데님터치 쿨데미지버킷햇</p>
+                                        <p class="ranking-card__price"><strong>20%</strong> 30,000원</p>
+                                        <ul class="ranking-card__stats" aria-label="콘텐츠 반응"><li><img src="images/icon-card-play.svg" alt="재생" />10만</li><li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li></ul>
+                                    </div>
+                                </li>
+                                <li class="ranking-card">
+                                    <img class="ranking-card__photo" src="images/con3-rank4a.jpg" alt="핑크 드레스를 입은 라이브 방송 모델" />
+                                    <div class="ranking-card__body">
+                                        <strong class="ranking-card__number">4</strong>
+                                        <h3>빈티지 특집 드레스 7set<br />파격 할인</h3>
+                                        <img class="ranking-card__divider" src="images/con3-divider.svg" alt="" />
+                                        <p class="ranking-card__product">라이트데님터치 쿨데미지버킷햇</p>
+                                        <p class="ranking-card__price"><strong>20%</strong> 30,000원</p>
+                                        <ul class="ranking-card__stats" aria-label="콘텐츠 반응"><li><img src="images/icon-card-play.svg" alt="재생" />10만</li><li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li></ul>
+                                    </div>
+                                </li>
+                                <li class="ranking-card">
+                                    <img class="ranking-card__photo" src="images/con3-rank6.jpg" alt="여행지에서 포즈를 취한 라이브 방송 모델" />
+                                    <div class="ranking-card__body">
+                                        <strong class="ranking-card__number">6</strong>
+                                        <h3>로맨틱 분위기 원피스<br />3종 특가</h3>
+                                        <img class="ranking-card__divider" src="images/con3-divider.svg" alt="" />
+                                        <p class="ranking-card__product">라이트데님터치 쿨데미지버킷햇</p>
+                                        <p class="ranking-card__price"><strong>20%</strong> 30,000원</p>
+                                        <ul class="ranking-card__stats" aria-label="콘텐츠 반응"><li><img src="images/icon-card-play.svg" alt="재생" />10만</li><li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li></ul>
+                                    </div>
+                                </li>
+                                <li class="ranking-card">
+                                    <img class="ranking-card__photo" src="images/con3-rank2.jpg" alt="스니커즈를 소개하는 라이브 방송 화면" />
+                                    <div class="ranking-card__body">
+                                        <strong class="ranking-card__number">2</strong>
+                                        <h3>한 아이템으로 일주일<br />코디 신발러들 최애템</h3>
+                                        <img class="ranking-card__divider" src="images/con3-divider.svg" alt="" />
+                                        <p class="ranking-card__product">라이트데님터치 쿨데미지버킷햇</p>
+                                        <p class="ranking-card__price"><strong>20%</strong> 30,000원</p>
+                                        <ul class="ranking-card__stats" aria-label="콘텐츠 반응"><li><img src="images/icon-card-play.svg" alt="재생" />10만</li><li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li></ul>
+                                    </div>
+                                </li>
+                                <li class="ranking-card">
+                                    <img class="ranking-card__photo" src="images/con3-rank4b.jpg" alt="선글라스를 착용한 라이브 방송 모델" />
+                                    <div class="ranking-card__body">
+                                        <strong class="ranking-card__number">4</strong>
+                                        <h3>기분내는데 빠질수 없는<br />아이템 모여</h3>
+                                        <img class="ranking-card__divider" src="images/con3-divider.svg" alt="" />
+                                        <p class="ranking-card__product">라이트데님터치 쿨데미지버킷햇</p>
+                                        <p class="ranking-card__price"><strong>20%</strong> 30,000원</p>
+                                        <ul class="ranking-card__stats" aria-label="콘텐츠 반응"><li><img src="images/icon-card-play.svg" alt="재생" />10만</li><li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li></ul>
+                                    </div>
+                                </li>
+                                <li class="ranking-card">
+                                    <img class="ranking-card__photo" src="images/con3-rank5.jpg" alt="선글라스와 레드 재킷을 착용한 라이브 방송 모델" />
+                                    <div class="ranking-card__body">
+                                        <strong class="ranking-card__number">5</strong>
+                                        <h3>연휴 선물 특집 라이브<br />방송 홈파티 준비 끝</h3>
+                                        <img class="ranking-card__divider" src="images/con3-divider.svg" alt="" />
+                                        <p class="ranking-card__product">라이트데님터치 쿨데미지버킷햇</p>
+                                        <p class="ranking-card__price"><strong>20%</strong> 30,000원</p>
+                                        <ul class="ranking-card__stats" aria-label="콘텐츠 반응"><li><img src="images/icon-card-play.svg" alt="재생" />10만</li><li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li></ul>
+                                    </div>
+                                </li>
+                                <li class="ranking-card">
+                                    <img class="ranking-card__photo" src="images/con3-rank7.jpg" alt="여행지의 성 앞에 선 라이브 방송 모델" />
+                                    <div class="ranking-card__body">
+                                        <strong class="ranking-card__number">7</strong>
+                                        <h3>로맨틱 여행 무드 가득<br />머리부터 발끝까지</h3>
+                                        <img class="ranking-card__divider" src="images/con3-divider.svg" alt="" />
+                                        <p class="ranking-card__product">라이트데님터치 쿨데미지버킷햇</p>
+                                        <p class="ranking-card__price"><strong>20%</strong> 30,000원</p>
+                                        <ul class="ranking-card__stats" aria-label="콘텐츠 반응"><li><img src="images/icon-card-play.svg" alt="재생" />10만</li><li><img src="images/icon-heart.svg" alt="좋아요" />5.2만</li></ul>
+                                    </div>
+                                </li>
+                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="con3__arrow con3__arrow--prev" type="button" aria-label="이전 라이브 랭킹"><img src="images/con3-prev.svg" alt="" /></button>
+                        <button class="con3__arrow con3__arrow--next" type="button" aria-label="다음 라이브 랭킹"><img src="images/con3-next.svg" alt="" /></button>
+                        <p class="con3__tag" aria-hidden="true">RANKING</p>
+                    </div>
+                </div>
+            </main>
+            <footer id="footer">
+                <div class="inner">
+                    <h2 class="footer__logo"><img src="images/footer-logo.svg" alt="LIVE EVIL" /></h2>
+                    <ul class="footer__contact">
+                        <li><strong>TEL</strong><a href="tel:+827041226636">(+82) 70-4122-6636</a></li>
+                        <li><strong>E-MAIL</strong><a href="mailto:slee@project-pef.com">slee@project-pef.com</a></li>
+                        <li><strong>ADRESS</strong><address>501-3, Gajeongbuk-ro 96, Yuseong-gu, Daejeon, 34111, South Korea</address></li>
+                    </ul>
+                    <nav class="footer__nav" aria-label="푸터 메뉴">
+                        <ul>
+                            <li><a href="#">Philosophy</a></li>
+                            <li><a href="#">Serum</a></li>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__bottom">
+                        <p>Copyright © 2026 pef Inc. All Rights Reserved</p>
+                        <ul class="footer__policy">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="footer__top is-hidden" href="#wrap">
+                    <img src="images/icon-top.svg" alt="" />
+                    <span>Top</span>
+                </a>
+            </footer>
+        </div>
+    </body>
+</html>   
