@@ -1112,22 +1112,7 @@ button {
     position: absolute;
     inset: 0;
     z-index: 1;
-    overflow-x: hidden;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-
-.con4__review-list::-webkit-scrollbar {
-    display: none;
-}
-
-.con4__scroll-space {
-    display: block;
-    width: 1px;
-    height: 1397.468px;
-    pointer-events: none;
+    overflow: hidden;
 }
 
 .con4__review {
@@ -1772,10 +1757,6 @@ button {
         top: auto;
         left: auto;
         transform: none;
-    }
-
-    .con4__scroll-space {
-        display: none;
     }
 
     .con5,
