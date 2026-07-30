@@ -1282,7 +1282,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1663.752px;
     height: 237.522px;
     color: var(--color-black);
     font-family: 'Leelawadee', Arial, sans-serif;
@@ -1295,11 +1294,13 @@ button {
 }
 
 .con5__word--first {
-    left: 0;
+    left: 3px;
+    width: 1763.752px;
 }
 
 .con5__word--second {
-    left: 1606px;
+    left: 1707px;
+    width: 988.752px;
 }
 
 .con5__wave {
