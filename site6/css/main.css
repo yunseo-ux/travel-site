@@ -502,7 +502,7 @@ button {
 
 .hero__top-button {
     position: fixed;
-    right: 19px;
+    right: 35px;
     bottom: 59px;
     z-index: 100;
     display: flex;
@@ -2120,27 +2120,5 @@ button {
         top: 45px;
         left: -48px;
         transform: scale(0.42);
-    }
-}
-/* Scroll text reveal */
-.scroll-reveal {
-    opacity: 0;
-    transform: translateY(-28px);
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
-    will-change: opacity, transform;
-}
-
-.scroll-reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .scroll-reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
     }
 }
