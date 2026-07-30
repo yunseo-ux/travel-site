@@ -182,9 +182,80 @@ button {
     height: 49px;
 }
 
-.category__icon-image--bike {
-    width: 65px;
-    height: 41px;
+.category__activity-icon {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 56px;
+    height: 56px;
+    filter: grayscale(1);
+    transition: filter 0.2s ease;
+}
+
+.category__activity-part {
+    position: absolute;
+    display: block;
+}
+
+.category__activity-part--main {
+    top: 10.75%;
+    left: 12.45%;
+    width: 74.99%;
+    height: 68.66%;
+}
+
+.category__activity-part--top {
+    top: 12.54%;
+    left: 63.3%;
+    width: 24.55%;
+    height: 24.55%;
+}
+
+.category__activity-part--top-dot-left {
+    top: 19.16%;
+    left: 69.02%;
+    width: 3.13%;
+    height: 3.13%;
+}
+
+.category__activity-part--top-dot-right {
+    top: 19.16%;
+    left: 79.01%;
+    width: 3.12%;
+    height: 3.13%;
+}
+
+.category__activity-part--bottom {
+    top: 57.01%;
+    left: 13.72%;
+    width: 24.55%;
+    height: 24.55%;
+}
+
+.category__activity-part--bottom-dot-left {
+    top: 63.63%;
+    left: 19.44%;
+    width: 3.12%;
+    height: 3.13%;
+}
+
+.category__activity-part--bottom-dot-right {
+    top: 63.63%;
+    left: 29.43%;
+    width: 3.12%;
+    height: 3.13%;
+}
+
+.category__activity-part--outline {
+    top: 10.77%;
+    left: 12.45%;
+    width: 74.99%;
+    height: 81.23%;
+}
+
+.category__link:hover .category__activity-icon,
+.category__link:focus-visible .category__activity-icon {
+    filter: none;
 }
 
 .category__icon-image--community {
@@ -372,6 +443,7 @@ button {
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -1.6px;
+    text-transform: capitalize;
 }
 
 .hero__description {
@@ -395,13 +467,12 @@ button {
     height: 11px;
     margin: 0;
     border-radius: 0;
-    background-color: rgba(255, 255, 255, 0.3);
+    background: url('../images/hero-indicator.svg') center / 14px 11px no-repeat;
     opacity: 1;
-    transform: skewX(-27deg);
 }
 
 .hero__indicator .swiper-pagination-bullet-active {
-    background-color: var(--color-white);
+    background-image: url('../images/hero-indicator-active.svg');
 }
 
 .hero__top-button {
@@ -462,7 +533,7 @@ button {
 }
 
 .con1__deco--wave {
-    top: 340px;
+    top: 370px;
     left: 250px;
     width: 132px;
     height: 48px;
@@ -483,8 +554,8 @@ button {
 }
 
 .con1__deco--quote {
-    top: 185px;
-    left: 1232px;
+    top: 202px;
+    left: 1312px;
     width: 56px;
     height: 48px;
 }
@@ -504,8 +575,8 @@ button {
 }
 
 .con1__tag--welcome {
-    top: 150px;
-    left: 183px;
+    top: 147px;
+    left: 193px;
     width: 241px;
     height: 56px;
     border-radius: 999px;
@@ -513,7 +584,7 @@ button {
     transform: rotate(-6.84deg);
 }
 
-.con1__tag--bicycle {
+.con1__tag--activity {
     top: 366px;
     left: 535px;
     width: 162px;
@@ -521,7 +592,7 @@ button {
     border-radius: 999px;
     background-color: #ff5f6d;
     box-shadow: 0 4.68px 0 rgba(145, 145, 145, 0.5);
-    transform: rotate(9.58deg);
+    transform: rotate(10.72deg);
 }
 
 .con1__tag--happy {
@@ -552,12 +623,13 @@ button {
 .con1__headline {
     position: absolute;
     top: 186px;
-    left: -1px;
+    left: calc(50% - 35.5px);
     display: flex;
     align-items: center;
     gap: 17px;
     width: max-content;
-    height: 212px;
+    height: 260px;
+    transform: translateX(-50%);
 }
 
 .con1__word,
@@ -567,9 +639,16 @@ button {
     object-fit: fill;
 }
 
-.con1__word--bicycle {
-    width: 748px;
-    height: 155px;
+.con1__word--activity {
+    width: auto;
+    height: auto;
+    color: #464646;
+    font-family: 'Leelawadee', Arial, sans-serif;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .con1__word--travel {
@@ -582,24 +661,24 @@ button {
     height: 43px;
 }
 
-.con1__bike {
+.con1__activity {
     position: relative;
     display: block;
     flex: 0 0 309px;
     width: 309px;
-    height: 212px;
+    height: 260px;
     overflow: hidden;
     mix-blend-mode: multiply;
     transform: scaleX(-1);
 }
 
-.con1__bike img {
+.con1__activity img {
     position: absolute;
-    top: -27px;
-    left: -34px;
+    top: 0;
+    left: 7.93%;
     display: block;
-    width: 372px;
-    height: 267px;
+    width: 84.14%;
+    height: 100%;
     object-fit: fill;
 }
 
@@ -676,11 +755,11 @@ button {
 }
 
 .con2__product-area--travel {
-    top: 0;
+    top: 899px;
 }
 
 .con2__product-area--event {
-    top: 899px;
+    top: 0;
 }
 
 .con2__topic {
@@ -792,7 +871,7 @@ button {
     background-color: #fad414;
 }
 
-.con2__location--chungcheong {
+.con2__location--busan {
     background-color: #8fc31f;
 }
 
@@ -874,11 +953,11 @@ button {
 
 .con3__visual img {
     position: absolute;
-    top: -99.03%;
-    left: -6.03%;
+    top: -76.78%;
+    left: 0;
     display: block;
-    width: 112.06%;
-    height: 222.8%;
+    width: 101.56%;
+    height: 201.93%;
     object-fit: fill;
 }
 
@@ -1055,11 +1134,6 @@ button {
 .con4__review:nth-child(4) {
     top: 457.234px;
     left: 1201px;
-}
-
-.con4__review:nth-child(3),
-.con4__review:nth-child(4) {
-    transform: translateY(var(--con4-counter-scroll, 0));
 }
 
 .con4__review > a {
@@ -1596,6 +1670,8 @@ button {
     }
 
     .con2 > .inner {
+        display: flex;
+        flex-direction: column;
         width: calc(100% - 80px);
         height: auto;
         overflow: visible;
@@ -1608,6 +1684,11 @@ button {
     }
 
     .con2__product-area--event {
+        order: 1;
+    }
+
+    .con2__product-area--travel {
+        order: 2;
         margin-top: 120px;
     }
 
